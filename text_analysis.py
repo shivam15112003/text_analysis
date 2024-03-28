@@ -178,7 +178,7 @@ for index, row in input_data.iterrows():
     #text_analysis_results
     text_analysis_results = perform_text_analysis(clean_text,fdir)
     # Append results to output_data
-    output_data.append([url_id, url, article_title, article_text] + text_analysis_results)
+    output_data.append([url_id, url, article_title, article_text , text_analysis_results])
 
 # Create DataFrame for output
 text_analysis_variables=['positive_score', 'negative_score', 'polarity_Score', 'subjectivity_score', 
